@@ -1,0 +1,17 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2" style="background-color:#1E3AEA">
+            <img class="mt-2" src="../../../assets/images/rtpnoticias.png"/>
+        </div>
+        <div class="col-8" style="background-color:#1E3AEA">
+            <marquee behavior="scroll" direction="left" class="mt-2" scrollamount="10">
+                <h4 class="text-white">
+                    <span *ngFor="let noticia of noticias.Noticias"><span class="text-warning">{{noticia.Titulo}}: </span><span class="text-white">{{noticia.Corpo}} <img src="../../../assets/images/rtplogo.png"/> </span></span>
+                </h4>
+            </marquee>
+        </div>
+        <div class="col-2 text-white" style="background-color:#1E3AEA">
+            <app-tempo></app-tempo>
+        </div>
+    </div>
+</div>
